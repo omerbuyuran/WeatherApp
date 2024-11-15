@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "4z+EaScDPlnmeYoUBn8zDXgVMcTj9+MjpsNS2nDWMiOdJ/m1a/o9Zh93m9mBh/1TXa0e+UwoV6jNqt1JRoUc5w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mertb\\Desktop\\ParibuCase\\WeatherApp\\WeatherAPIClient\\WeatherAPIClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mertb\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\mertb\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\mertb\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\mertb\\.nuget\\packages\\restsharp\\108.0.1\\restsharp.108.0.1.nupkg.sha512",
+    "C:\\Users\\mertb\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

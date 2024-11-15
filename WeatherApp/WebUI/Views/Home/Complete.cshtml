@@ -1,0 +1,25 @@
+﻿@using Models.Model;
+@model CompleteViewModel
+
+@{
+    ViewData["Title"] = "Hava Durumu";
+}
+
+<div>
+    <table class="table table responsive">
+        <tr>
+            <td>Şehir</td>
+            <td>Sıcaklık</td>
+            <td>Tarih</td>
+            <td>Favoriye Ekle</td>
+        </tr>
+
+        <tr>
+            <td>@Model.WeatherResponse.WeatherInfo.City</td>
+            <td>@Model.WeatherResponse.WeatherInfo.Temperature</td>
+            <td>@Model.WeatherResponse.WeatherInfo.Date</td>
+            <td><a class="btn btn-primary" asp-controller="Home" asp-action="AddToFavorite" asp-route-cityName="@Model.WeatherResponse.WeatherInfo.City"> Favoriye Ekle</a></td>
+        </tr>
+        
+    </table>
+</div>

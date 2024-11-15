@@ -1,0 +1,572 @@
+2024-11-15 16:31:25.445 +03:00 [INF] User profile is available. Using 'C:\Users\mertb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-15 16:31:25.933 +03:00 [INF] Now listening on: https://localhost:7001
+2024-11-15 16:31:25.935 +03:00 [INF] Now listening on: http://localhost:5228
+2024-11-15 16:31:25.944 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-15 16:31:25.946 +03:00 [INF] Hosting environment: Development
+2024-11-15 16:31:25.948 +03:00 [INF] Content root path: C:\Users\mertb\Desktop\ParibuCase\WeatherApp\WebUI\
+2024-11-15 16:31:26.959 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/ - -
+2024-11-15 16:31:27.063 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.IndexAsync (WebUI)'
+2024-11-15 16:31:27.144 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IndexAsync() on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:31:36.836 +03:00 [WRN] No store type was specified for the decimal property 'Temperature' on entity type 'WeatherInfo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-15 16:31:37.095 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:31:38.401 +03:00 [INF] Executed DbCommand (107ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name], [u].[Surname], [u].[Type]
+FROM [Users] AS [u]
+2024-11-15 16:31:38.597 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-15 16:31:38.966 +03:00 [INF] Executed ViewResult - view Index executed in 371.1731ms.
+2024-11-15 16:31:38.976 +03:00 [INF] Executed action WebUI.Controllers.HomeController.IndexAsync (WebUI) in 11827.8186ms
+2024-11-15 16:31:38.979 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.IndexAsync (WebUI)'
+2024-11-15 16:31:38.988 +03:00 [INF] HTTP GET / responded 200 in 11965.2665 ms
+2024-11-15 16:31:39.054 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2024-11-15 16:31:39.054 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/WebUI.styles.css?v=yzq8bddoqY4nXPq7UA4IdBJKrRePQwRALUPnQmcLpzA - -
+2024-11-15 16:31:39.061 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:31:39.054 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2024-11-15 16:31:39.055 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/lib/jquery/dist/jquery.min.js - -
+2024-11-15 16:31:39.054 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:31:39.054 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2024-11-15 16:31:39.081 +03:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2024-11-15 16:31:39.081 +03:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2024-11-15 16:31:39.084 +03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 304 in 11.9388 ms
+2024-11-15 16:31:39.086 +03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 304 in 10.4784 ms
+2024-11-15 16:31:39.081 +03:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2024-11-15 16:31:39.102 +03:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 304 in 24.6116 ms
+2024-11-15 16:31:39.070 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2024-11-15 16:31:39.090 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/ - - - 200 - text/html;+charset=utf-8 12138.1048ms
+2024-11-15 16:31:39.091 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 36.8651ms
+2024-11-15 16:31:39.091 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 36.9621ms
+2024-11-15 16:31:39.093 +03:00 [INF] Sending file. Request path: '/WebUI.styles.css'. Physical path: 'C:\Users\mertb\Desktop\ParibuCase\WeatherApp\WebUI\obj\Debug\net6.0\scopedcss\bundle\WebUI.styles.css'
+2024-11-15 16:31:39.099 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 44.3498ms
+2024-11-15 16:31:39.082 +03:00 [INF] The file /css/site.css was not modified
+2024-11-15 16:31:39.106 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 51.5378ms
+2024-11-15 16:31:39.111 +03:00 [INF] The file /js/site.js was not modified
+2024-11-15 16:31:39.120 +03:00 [INF] HTTP GET /WebUI.styles.css responded 200 in 47.4299 ms
+2024-11-15 16:31:39.125 +03:00 [INF] HTTP GET /css/site.css responded 304 in 43.5085 ms
+2024-11-15 16:31:39.130 +03:00 [INF] HTTP GET /js/site.js responded 304 in 19.7101 ms
+2024-11-15 16:31:39.134 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/WebUI.styles.css?v=yzq8bddoqY4nXPq7UA4IdBJKrRePQwRALUPnQmcLpzA - - - 200 1122 text/css 79.4144ms
+2024-11-15 16:31:39.137 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 304 - text/css 82.9475ms
+2024-11-15 16:31:39.141 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - application/javascript 70.5885ms
+2024-11-15 16:31:39.180 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 119.0156ms
+2024-11-15 16:31:41.381 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/Login?userId=2 - -
+2024-11-15 16:31:41.387 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.LoginAsync (WebUI)'
+2024-11-15 16:31:41.412 +03:00 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Int32) on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:31:41.449 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:31:41.824 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Name], [u].[Surname], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__p_0
+2024-11-15 16:31:42.056 +03:00 [INF] Executing RedirectResult, redirecting to /Home/Privacy.
+2024-11-15 16:31:42.072 +03:00 [INF] Executed action WebUI.Controllers.HomeController.LoginAsync (WebUI) in 656.2044ms
+2024-11-15 16:31:42.074 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.LoginAsync (WebUI)'
+2024-11-15 16:31:42.078 +03:00 [INF] Session started; Key:62723142-8796-b0e7-d648-908167e7c783, Id:14b9164c-a48a-2cb7-8eb6-0f1f0411b52e
+2024-11-15 16:31:42.081 +03:00 [INF] HTTP GET /Home/Login responded 302 in 697.0308 ms
+2024-11-15 16:31:42.085 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/Login?userId=2 - - - 302 0 - 704.0888ms
+2024-11-15 16:31:42.089 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/Privacy - -
+2024-11-15 16:31:42.096 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:31:42.102 +03:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PrivacyAsync() on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:31:42.290 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:31:42.315 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:31:42.328 +03:00 [INF] Executing ViewResult, running view Privacy.
+2024-11-15 16:31:42.349 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:31:42.430 +03:00 [INF] Executed ViewResult - view Privacy executed in 103.0083ms.
+2024-11-15 16:31:42.433 +03:00 [INF] Executed action WebUI.Controllers.HomeController.PrivacyAsync (WebUI) in 328.1691ms
+2024-11-15 16:31:42.438 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:31:42.440 +03:00 [INF] HTTP GET /Home/Privacy responded 200 in 349.0678 ms
+2024-11-15 16:31:42.451 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/Privacy - - - 200 - text/html;+charset=utf-8 362.7779ms
+2024-11-15 16:31:42.456 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:31:42.456 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:31:42.458 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 2.4464ms
+2024-11-15 16:31:42.464 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.8067ms
+2024-11-15 16:31:47.421 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7001/Home/Complete application/x-www-form-urlencoded 198
+2024-11-15 16:31:47.424 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.Complete (WebUI)'
+2024-11-15 16:31:47.436 +03:00 [INF] Route matched with {action = "Complete", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Complete(Models.Model.RequestApiViewModel) on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:31:59.592 +03:00 [INF] Executed action WebUI.Controllers.HomeController.Complete (WebUI) in 12150.4765ms
+2024-11-15 16:31:59.595 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.Complete (WebUI)'
+2024-11-15 16:31:59.597 +03:00 [ERR] HTTP POST /Home/Complete responded 500 in 12173.1464 ms
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=GET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-868J7S1(SE.Redis-v2.8.16.12844), IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=0,Free=32767,Min=8,Max=32767), POOL: (Threads=12,QueuedItems=0,CompletedItems=334,Timers=7), v: 2.8.16.12844 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Business.RedisService.GetValueAsync(String key) in C:\Users\mertb\Desktop\ParibuCase\WeatherApp\Business\RedisService.cs:line 29
+   at WebUI.Controllers.HomeController.Complete(RequestApiViewModel req) in C:\Users\mertb\Desktop\ParibuCase\WeatherApp\WebUI\Controllers\HomeController.cs:line 159
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-11-15 16:31:59.720 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=GET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-868J7S1(SE.Redis-v2.8.16.12844), IOCP: (Busy=0,Free=1000,Min=8,Max=1000), WORKER: (Busy=0,Free=32767,Min=8,Max=32767), POOL: (Threads=12,QueuedItems=0,CompletedItems=334,Timers=7), v: 2.8.16.12844 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Business.RedisService.GetValueAsync(String key) in C:\Users\mertb\Desktop\ParibuCase\WeatherApp\Business\RedisService.cs:line 29
+   at WebUI.Controllers.HomeController.Complete(RequestApiViewModel req) in C:\Users\mertb\Desktop\ParibuCase\WeatherApp\WebUI\Controllers\HomeController.cs:line 159
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-11-15 16:31:59.826 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7001/Home/Complete application/x-www-form-urlencoded 198 - 500 - text/html;+charset=utf-8 12404.7894ms
+2024-11-15 16:31:59.842 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:31:59.842 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:31:59.844 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 2.2577ms
+2024-11-15 16:31:59.850 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.8705ms
+2024-11-15 16:32:13.123 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/Privacy - -
+2024-11-15 16:32:13.127 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:32:13.129 +03:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PrivacyAsync() on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:32:13.133 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:32:13.139 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:32:13.143 +03:00 [INF] Executing ViewResult, running view Privacy.
+2024-11-15 16:32:13.146 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:32:13.157 +03:00 [INF] Executed ViewResult - view Privacy executed in 13.2381ms.
+2024-11-15 16:32:13.160 +03:00 [INF] Executed action WebUI.Controllers.HomeController.PrivacyAsync (WebUI) in 28.2157ms
+2024-11-15 16:32:13.164 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:32:13.166 +03:00 [INF] HTTP GET /Home/Privacy responded 200 in 39.4455 ms
+2024-11-15 16:32:13.171 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/Privacy - - - 200 - text/html;+charset=utf-8 48.6730ms
+2024-11-15 16:32:13.175 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:32:13.177 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 1.9018ms
+2024-11-15 16:32:27.548 +03:00 [INF] User profile is available. Using 'C:\Users\mertb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-15 16:32:27.846 +03:00 [INF] Now listening on: https://localhost:7001
+2024-11-15 16:32:27.849 +03:00 [INF] Now listening on: http://localhost:5228
+2024-11-15 16:32:27.856 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-15 16:32:27.858 +03:00 [INF] Hosting environment: Development
+2024-11-15 16:32:27.860 +03:00 [INF] Content root path: C:\Users\mertb\Desktop\ParibuCase\WeatherApp\WebUI\
+2024-11-15 16:32:28.622 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/ - -
+2024-11-15 16:32:28.727 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.IndexAsync (WebUI)'
+2024-11-15 16:32:28.791 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IndexAsync() on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:32:30.449 +03:00 [WRN] No store type was specified for the decimal property 'Temperature' on entity type 'WeatherInfo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-15 16:32:30.707 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:32:31.843 +03:00 [INF] Executed DbCommand (87ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name], [u].[Surname], [u].[Type]
+FROM [Users] AS [u]
+2024-11-15 16:32:32.030 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-15 16:32:32.272 +03:00 [INF] Executed ViewResult - view Index executed in 240.2368ms.
+2024-11-15 16:32:32.282 +03:00 [INF] Executed action WebUI.Controllers.HomeController.IndexAsync (WebUI) in 3487.5241ms
+2024-11-15 16:32:32.286 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.IndexAsync (WebUI)'
+2024-11-15 16:32:32.295 +03:00 [INF] HTTP GET / responded 200 in 3606.1054 ms
+2024-11-15 16:32:32.340 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:32:32.341 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/WebUI.styles.css?v=yzq8bddoqY4nXPq7UA4IdBJKrRePQwRALUPnQmcLpzA - -
+2024-11-15 16:32:32.344 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:32:32.351 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 9.3493ms
+2024-11-15 16:32:32.355 +03:00 [INF] The file /WebUI.styles.css was not modified
+2024-11-15 16:32:32.358 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/ - - - 200 - text/html;+charset=utf-8 3750.6506ms
+2024-11-15 16:32:32.359 +03:00 [INF] HTTP GET /WebUI.styles.css responded 304 in 15.1317 ms
+2024-11-15 16:32:32.363 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/WebUI.styles.css?v=yzq8bddoqY4nXPq7UA4IdBJKrRePQwRALUPnQmcLpzA - - - 304 - text/css 21.9050ms
+2024-11-15 16:32:32.367 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.4341ms
+2024-11-15 16:32:40.048 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/Login?userId=2 - -
+2024-11-15 16:32:40.055 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.LoginAsync (WebUI)'
+2024-11-15 16:32:40.075 +03:00 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Int32) on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:32:40.129 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:32:40.503 +03:00 [INF] Executed DbCommand (56ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Name], [u].[Surname], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__p_0
+2024-11-15 16:32:40.705 +03:00 [INF] Accessing expired session, Key:62723142-8796-b0e7-d648-908167e7c783
+2024-11-15 16:32:40.708 +03:00 [INF] Executing RedirectResult, redirecting to /Home/Privacy.
+2024-11-15 16:32:40.722 +03:00 [INF] Executed action WebUI.Controllers.HomeController.LoginAsync (WebUI) in 643.34ms
+2024-11-15 16:32:40.725 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.LoginAsync (WebUI)'
+2024-11-15 16:32:40.727 +03:00 [INF] Session started; Key:62723142-8796-b0e7-d648-908167e7c783, Id:af3da863-6caf-1e0f-259d-9068a55fc39b
+2024-11-15 16:32:40.729 +03:00 [INF] HTTP GET /Home/Login responded 302 in 677.8359 ms
+2024-11-15 16:32:40.732 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/Login?userId=2 - - - 302 0 - 684.2339ms
+2024-11-15 16:32:40.739 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/Privacy - -
+2024-11-15 16:32:40.743 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:32:40.747 +03:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PrivacyAsync() on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:32:40.900 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:32:40.921 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:32:40.937 +03:00 [INF] Executing ViewResult, running view Privacy.
+2024-11-15 16:32:40.958 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:32:41.034 +03:00 [INF] Executed ViewResult - view Privacy executed in 97.1952ms.
+2024-11-15 16:32:41.036 +03:00 [INF] Executed action WebUI.Controllers.HomeController.PrivacyAsync (WebUI) in 284.1317ms
+2024-11-15 16:32:41.038 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:32:41.041 +03:00 [INF] HTTP GET /Home/Privacy responded 200 in 299.9396 ms
+2024-11-15 16:32:41.046 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/Privacy - - - 200 - text/html;+charset=utf-8 307.6988ms
+2024-11-15 16:32:41.051 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:32:41.051 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:32:41.063 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 12.7411ms
+2024-11-15 16:32:41.066 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.7748ms
+2024-11-15 16:32:43.558 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7001/Home/Complete application/x-www-form-urlencoded 198
+2024-11-15 16:32:43.561 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.Complete (WebUI)'
+2024-11-15 16:32:43.570 +03:00 [INF] Route matched with {action = "Complete", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Complete(Models.Model.RequestApiViewModel) on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:32:43.658 +03:00 [INF] Executing ViewResult, running view Complete.
+2024-11-15 16:32:43.677 +03:00 [INF] Executed ViewResult - view Complete executed in 19.9543ms.
+2024-11-15 16:32:43.680 +03:00 [INF] Executed action WebUI.Controllers.HomeController.Complete (WebUI) in 105.2545ms
+2024-11-15 16:32:43.684 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.Complete (WebUI)'
+2024-11-15 16:32:43.686 +03:00 [INF] HTTP POST /Home/Complete responded 200 in 124.9926 ms
+2024-11-15 16:32:43.692 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7001/Home/Complete application/x-www-form-urlencoded 198 - 200 - text/html;+charset=utf-8 133.9549ms
+2024-11-15 16:32:43.704 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:32:43.704 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:32:43.707 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 3.3236ms
+2024-11-15 16:32:43.713 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.3988ms
+2024-11-15 16:32:47.010 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/AddToFavorite?cityName=adana - -
+2024-11-15 16:32:47.013 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.AddToFavorite (WebUI)'
+2024-11-15 16:32:47.019 +03:00 [INF] Route matched with {action = "AddToFavorite", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToFavorite(System.String) on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:32:50.399 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:32:50.653 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Favorites] ([CityName], [UserId])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Favorites]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-11-15 16:32:50.754 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+2024-11-15 16:32:50.758 +03:00 [INF] Executing RedirectResult, redirecting to /Home/Privacy.
+2024-11-15 16:32:50.761 +03:00 [INF] Executed action WebUI.Controllers.HomeController.AddToFavorite (WebUI) in 3738.7139ms
+2024-11-15 16:32:50.763 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.AddToFavorite (WebUI)'
+2024-11-15 16:32:50.765 +03:00 [INF] HTTP GET /Home/AddToFavorite responded 302 in 3751.8841 ms
+2024-11-15 16:32:50.767 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/AddToFavorite?cityName=adana - - - 302 0 - 3757.2181ms
+2024-11-15 16:32:50.771 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/Privacy - -
+2024-11-15 16:32:50.773 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:32:50.775 +03:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PrivacyAsync() on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:32:50.779 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:32:50.784 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:32:50.788 +03:00 [INF] Executing ViewResult, running view Privacy.
+2024-11-15 16:32:50.791 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:32:50.802 +03:00 [INF] Executed ViewResult - view Privacy executed in 13.4346ms.
+2024-11-15 16:32:50.804 +03:00 [INF] Executed action WebUI.Controllers.HomeController.PrivacyAsync (WebUI) in 26.0638ms
+2024-11-15 16:32:50.807 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:32:50.809 +03:00 [INF] HTTP GET /Home/Privacy responded 200 in 36.0598 ms
+2024-11-15 16:32:50.815 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/Privacy - - - 200 - text/html;+charset=utf-8 43.5942ms
+2024-11-15 16:32:50.818 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:32:50.818 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:32:50.820 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 1.8517ms
+2024-11-15 16:32:50.826 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.4778ms
+2024-11-15 16:33:00.072 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/DeleteFavorite?favoriteId=2 - -
+2024-11-15 16:33:00.075 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.DeleteFavorite (WebUI)'
+2024-11-15 16:33:00.083 +03:00 [INF] Route matched with {action = "DeleteFavorite", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteFavorite(Int32) on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:33:00.091 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:33:00.103 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[Id] = @__p_0
+2024-11-15 16:33:00.135 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Favorites]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2024-11-15 16:33:00.153 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+2024-11-15 16:33:00.159 +03:00 [INF] Executing RedirectResult, redirecting to /Home/Privacy.
+2024-11-15 16:33:00.160 +03:00 [INF] Executed action WebUI.Controllers.HomeController.DeleteFavorite (WebUI) in 73.2197ms
+2024-11-15 16:33:00.162 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.DeleteFavorite (WebUI)'
+2024-11-15 16:33:00.164 +03:00 [INF] HTTP GET /Home/DeleteFavorite responded 302 in 88.5110 ms
+2024-11-15 16:33:00.167 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/DeleteFavorite?favoriteId=2 - - - 302 0 - 94.2356ms
+2024-11-15 16:33:00.170 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/Privacy - -
+2024-11-15 16:33:00.174 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:33:00.177 +03:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PrivacyAsync() on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:33:00.180 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:33:00.184 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:33:00.190 +03:00 [INF] Executing ViewResult, running view Privacy.
+2024-11-15 16:33:00.193 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:33:00.203 +03:00 [INF] Executed ViewResult - view Privacy executed in 12.8899ms.
+2024-11-15 16:33:00.206 +03:00 [INF] Executed action WebUI.Controllers.HomeController.PrivacyAsync (WebUI) in 26.4436ms
+2024-11-15 16:33:00.209 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:33:00.211 +03:00 [INF] HTTP GET /Home/Privacy responded 200 in 36.8462 ms
+2024-11-15 16:33:00.218 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/Privacy - - - 200 - text/html;+charset=utf-8 47.4808ms
+2024-11-15 16:33:00.222 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:33:00.222 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:33:00.224 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 2.3217ms
+2024-11-15 16:33:00.238 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.5356ms
+2024-11-15 16:33:07.677 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7001/Home/Complete application/x-www-form-urlencoded 201
+2024-11-15 16:33:07.680 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.Complete (WebUI)'
+2024-11-15 16:33:07.683 +03:00 [INF] Route matched with {action = "Complete", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Complete(Models.Model.RequestApiViewModel) on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:33:07.689 +03:00 [INF] Executing ViewResult, running view Complete.
+2024-11-15 16:33:07.696 +03:00 [INF] Executed ViewResult - view Complete executed in 6.6654ms.
+2024-11-15 16:33:07.699 +03:00 [INF] Executed action WebUI.Controllers.HomeController.Complete (WebUI) in 12.1598ms
+2024-11-15 16:33:07.702 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.Complete (WebUI)'
+2024-11-15 16:33:07.704 +03:00 [INF] HTTP POST /Home/Complete responded 200 in 23.3048 ms
+2024-11-15 16:33:07.708 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7001/Home/Complete application/x-www-form-urlencoded 201 - 200 - text/html;+charset=utf-8 30.4206ms
+2024-11-15 16:33:07.712 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:33:07.713 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:33:07.716 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 3.0799ms
+2024-11-15 16:33:07.724 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.1510ms
+2024-11-15 16:33:16.114 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/AddToFavorite?cityName=istanbul - -
+2024-11-15 16:33:16.117 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.AddToFavorite (WebUI)'
+2024-11-15 16:33:16.119 +03:00 [INF] Route matched with {action = "AddToFavorite", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToFavorite(System.String) on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:33:18.685 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:33:18.693 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Favorites] ([CityName], [UserId])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Favorites]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-11-15 16:33:18.711 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+2024-11-15 16:33:18.715 +03:00 [INF] Executing RedirectResult, redirecting to /Home/Privacy.
+2024-11-15 16:33:18.717 +03:00 [INF] Executed action WebUI.Controllers.HomeController.AddToFavorite (WebUI) in 2592.4243ms
+2024-11-15 16:33:18.719 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.AddToFavorite (WebUI)'
+2024-11-15 16:33:18.721 +03:00 [INF] HTTP GET /Home/AddToFavorite responded 302 in 2603.6859 ms
+2024-11-15 16:33:18.724 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/AddToFavorite?cityName=istanbul - - - 302 0 - 2610.3105ms
+2024-11-15 16:33:19.331 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/Privacy - -
+2024-11-15 16:33:19.334 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:33:19.336 +03:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PrivacyAsync() on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:33:19.340 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:33:19.344 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:33:19.348 +03:00 [INF] Executing ViewResult, running view Privacy.
+2024-11-15 16:33:19.351 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:33:19.366 +03:00 [INF] Executed ViewResult - view Privacy executed in 17.1755ms.
+2024-11-15 16:33:19.367 +03:00 [INF] Executed action WebUI.Controllers.HomeController.PrivacyAsync (WebUI) in 28.3827ms
+2024-11-15 16:33:19.370 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:33:19.372 +03:00 [INF] HTTP GET /Home/Privacy responded 200 in 38.0345 ms
+2024-11-15 16:33:19.379 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/Privacy - - - 200 - text/html;+charset=utf-8 48.4941ms
+2024-11-15 16:33:19.383 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/WebUI.styles.css?v=yzq8bddoqY4nXPq7UA4IdBJKrRePQwRALUPnQmcLpzA - -
+2024-11-15 16:33:19.383 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:33:19.383 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:33:19.385 +03:00 [INF] The file /WebUI.styles.css was not modified
+2024-11-15 16:33:19.386 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 3.1659ms
+2024-11-15 16:33:19.390 +03:00 [INF] HTTP GET /WebUI.styles.css responded 304 in 5.8817 ms
+2024-11-15 16:33:19.392 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.7783ms
+2024-11-15 16:33:19.397 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/WebUI.styles.css?v=yzq8bddoqY4nXPq7UA4IdBJKrRePQwRALUPnQmcLpzA - - - 304 - text/css 14.3409ms
+2024-11-15 16:33:26.274 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7001/Home/Complete application/x-www-form-urlencoded 201
+2024-11-15 16:33:26.277 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.Complete (WebUI)'
+2024-11-15 16:33:26.279 +03:00 [INF] Route matched with {action = "Complete", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Complete(Models.Model.RequestApiViewModel) on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:33:26.288 +03:00 [INF] Starting GetAverageWeatherFromApisAsync for erzincan
+2024-11-15 16:33:26.291 +03:00 [INF] Creating new request for erzincan
+2024-11-15 16:33:26.292 +03:00 [INF] Initiating API request for erzincan
+2024-11-15 16:33:31.299 +03:00 [INF] Starting FetchWeatherData for erzincan
+2024-11-15 16:33:31.304 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:33:31.340 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__weatherInfoDate_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [w].[Id], [w].[City], [w].[Date], [w].[Temperature]
+FROM [WeatherInfos] AS [w]
+WHERE [w].[Date] = @__weatherInfoDate_0
+2024-11-15 16:33:31.345 +03:00 [INF] No existing weather data found in database for erzincan. Fetching from APIs.
+2024-11-15 16:33:31.390 +03:00 [INF] Start processing HTTP request GET "http://api.weatherapi.com/v1/forecast.json?q=erzincan&days=1&key=9304abbceb564662a3a162330240911"
+2024-11-15 16:33:31.396 +03:00 [INF] Sending HTTP request GET "http://api.weatherapi.com/v1/forecast.json?q=erzincan&days=1&key=9304abbceb564662a3a162330240911"
+2024-11-15 16:33:31.650 +03:00 [INF] Received HTTP response headers after 245.279ms - 200
+2024-11-15 16:33:31.654 +03:00 [INF] End processing HTTP request after 266.5744ms - 200
+2024-11-15 16:33:31.729 +03:00 [INF] Start processing HTTP request GET "http://api.weatherstack.com/current?access_key=502f027b8ec4bb1b6d24bdfcbff6010b&query=erzincan"
+2024-11-15 16:33:31.733 +03:00 [INF] Sending HTTP request GET "http://api.weatherstack.com/current?access_key=502f027b8ec4bb1b6d24bdfcbff6010b&query=erzincan"
+2024-11-15 16:33:32.177 +03:00 [INF] Received HTTP response headers after 442.5835ms - 200
+2024-11-15 16:33:32.180 +03:00 [INF] End processing HTTP request after 450.6272ms - 200
+2024-11-15 16:33:32.256 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [WeatherInfos] ([City], [Date], [Temperature])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [WeatherInfos]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-11-15 16:33:32.263 +03:00 [INF] Weather data for erzincan saved successfully with average temperature 8.25
+2024-11-15 16:33:32.278 +03:00 [INF] Request for erzincan removed from in-progress list
+2024-11-15 16:33:32.282 +03:00 [INF] Executing ViewResult, running view Complete.
+2024-11-15 16:33:32.289 +03:00 [INF] Executed ViewResult - view Complete executed in 7.0845ms.
+2024-11-15 16:33:32.292 +03:00 [INF] Executed action WebUI.Controllers.HomeController.Complete (WebUI) in 6009.3532ms
+2024-11-15 16:33:32.295 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.Complete (WebUI)'
+2024-11-15 16:33:32.297 +03:00 [INF] HTTP POST /Home/Complete responded 200 in 6020.1238 ms
+2024-11-15 16:33:32.301 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7001/Home/Complete application/x-www-form-urlencoded 201 - 200 - text/html;+charset=utf-8 6027.4030ms
+2024-11-15 16:33:32.310 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:33:32.310 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:33:32.312 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 2.8055ms
+2024-11-15 16:33:32.318 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.4655ms
+2024-11-15 16:33:35.443 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/AddToFavorite?cityName=erzincan - -
+2024-11-15 16:33:35.446 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.AddToFavorite (WebUI)'
+2024-11-15 16:33:35.448 +03:00 [INF] Route matched with {action = "AddToFavorite", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToFavorite(System.String) on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:33:38.587 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:33:38.594 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Favorites] ([CityName], [UserId])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Favorites]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-11-15 16:33:38.609 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+2024-11-15 16:33:38.614 +03:00 [INF] Executing RedirectResult, redirecting to /Home/Privacy.
+2024-11-15 16:33:38.615 +03:00 [INF] Executed action WebUI.Controllers.HomeController.AddToFavorite (WebUI) in 3164.1077ms
+2024-11-15 16:33:38.617 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.AddToFavorite (WebUI)'
+2024-11-15 16:33:38.619 +03:00 [INF] HTTP GET /Home/AddToFavorite responded 302 in 3173.3463 ms
+2024-11-15 16:33:38.621 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/AddToFavorite?cityName=erzincan - - - 302 0 - 3178.8563ms
+2024-11-15 16:33:38.625 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/Privacy - -
+2024-11-15 16:33:38.627 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:33:38.628 +03:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PrivacyAsync() on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:33:38.632 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:33:38.637 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:33:38.641 +03:00 [INF] Executing ViewResult, running view Privacy.
+2024-11-15 16:33:38.645 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:33:38.654 +03:00 [INF] Executed ViewResult - view Privacy executed in 12.8437ms.
+2024-11-15 16:33:38.657 +03:00 [INF] Executed action WebUI.Controllers.HomeController.PrivacyAsync (WebUI) in 25.8532ms
+2024-11-15 16:33:38.660 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:33:38.662 +03:00 [INF] HTTP GET /Home/Privacy responded 200 in 35.0627 ms
+2024-11-15 16:33:38.688 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/Privacy - - - 200 - text/html;+charset=utf-8 63.4114ms
+2024-11-15 16:33:38.694 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:33:38.694 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:33:38.699 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 4.8637ms
+2024-11-15 16:33:38.701 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.5529ms
+2024-11-15 16:34:31.422 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/ - -
+2024-11-15 16:34:31.425 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.IndexAsync (WebUI)'
+2024-11-15 16:34:31.426 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IndexAsync() on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:34:31.430 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:34:31.439 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name], [u].[Surname], [u].[Type]
+FROM [Users] AS [u]
+2024-11-15 16:34:31.442 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-15 16:34:31.448 +03:00 [INF] Executed ViewResult - view Index executed in 5.8388ms.
+2024-11-15 16:34:31.451 +03:00 [INF] Executed action WebUI.Controllers.HomeController.IndexAsync (WebUI) in 21.4897ms
+2024-11-15 16:34:31.453 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.IndexAsync (WebUI)'
+2024-11-15 16:34:31.455 +03:00 [INF] HTTP GET / responded 200 in 30.5280 ms
+2024-11-15 16:34:31.459 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/ - - - 200 - text/html;+charset=utf-8 36.7133ms
+2024-11-15 16:34:31.469 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/WebUI.styles.css?v=yzq8bddoqY4nXPq7UA4IdBJKrRePQwRALUPnQmcLpzA - -
+2024-11-15 16:34:31.470 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:34:31.470 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:34:31.480 +03:00 [INF] The file /WebUI.styles.css was not modified
+2024-11-15 16:34:31.481 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 11.3551ms
+2024-11-15 16:34:31.485 +03:00 [INF] HTTP GET /WebUI.styles.css responded 304 in 5.5927 ms
+2024-11-15 16:34:31.486 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.8350ms
+2024-11-15 16:34:31.490 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/WebUI.styles.css?v=yzq8bddoqY4nXPq7UA4IdBJKrRePQwRALUPnQmcLpzA - - - 304 - text/css 21.0398ms
+2024-11-15 16:34:34.101 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/Login?userId=1 - -
+2024-11-15 16:34:34.103 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.LoginAsync (WebUI)'
+2024-11-15 16:34:34.105 +03:00 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Int32) on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:34:34.109 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:34:34.116 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Name], [u].[Surname], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__p_0
+2024-11-15 16:34:34.120 +03:00 [INF] Executing RedirectResult, redirecting to /Home/Privacy.
+2024-11-15 16:34:34.121 +03:00 [INF] Executed action WebUI.Controllers.HomeController.LoginAsync (WebUI) in 13.2046ms
+2024-11-15 16:34:34.123 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.LoginAsync (WebUI)'
+2024-11-15 16:34:34.125 +03:00 [INF] HTTP GET /Home/Login responded 302 in 21.8648 ms
+2024-11-15 16:34:34.128 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/Login?userId=1 - - - 302 0 - 26.7969ms
+2024-11-15 16:34:34.131 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/Privacy - -
+2024-11-15 16:34:34.133 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:34:34.136 +03:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PrivacyAsync() on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:34:34.140 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:34:34.147 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:34:34.151 +03:00 [INF] Executing ViewResult, running view Privacy.
+2024-11-15 16:34:34.154 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:34:34.162 +03:00 [INF] Executed ViewResult - view Privacy executed in 11.3738ms.
+2024-11-15 16:34:34.166 +03:00 [INF] Executed action WebUI.Controllers.HomeController.PrivacyAsync (WebUI) in 26.0724ms
+2024-11-15 16:34:34.169 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:34:34.170 +03:00 [INF] HTTP GET /Home/Privacy responded 200 in 37.1429 ms
+2024-11-15 16:34:34.176 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/Privacy - - - 200 - text/html;+charset=utf-8 44.9656ms
+2024-11-15 16:34:34.179 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:34:34.179 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:34:34.180 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 1.5549ms
+2024-11-15 16:34:34.185 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.3379ms
+2024-11-15 16:34:40.559 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7001/Home/Complete application/x-www-form-urlencoded 201
+2024-11-15 16:34:40.562 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.Complete (WebUI)'
+2024-11-15 16:34:40.564 +03:00 [INF] Route matched with {action = "Complete", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Complete(Models.Model.RequestApiViewModel) on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:34:40.569 +03:00 [INF] Executing ViewResult, running view Complete.
+2024-11-15 16:34:40.577 +03:00 [INF] Executed ViewResult - view Complete executed in 7.5653ms.
+2024-11-15 16:34:40.580 +03:00 [INF] Executed action WebUI.Controllers.HomeController.Complete (WebUI) in 12.1483ms
+2024-11-15 16:34:40.582 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.Complete (WebUI)'
+2024-11-15 16:34:40.584 +03:00 [INF] HTTP POST /Home/Complete responded 200 in 22.8017 ms
+2024-11-15 16:34:40.590 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7001/Home/Complete application/x-www-form-urlencoded 201 - 200 - text/html;+charset=utf-8 31.6649ms
+2024-11-15 16:34:40.594 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:34:40.595 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:34:40.596 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 2.0246ms
+2024-11-15 16:34:40.602 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.5832ms
+2024-11-15 16:34:42.909 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/AddToFavorite?cityName=istanbul - -
+2024-11-15 16:34:42.912 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.AddToFavorite (WebUI)'
+2024-11-15 16:34:42.914 +03:00 [INF] Route matched with {action = "AddToFavorite", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToFavorite(System.String) on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:34:45.895 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:34:45.904 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Favorites] ([CityName], [UserId])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Favorites]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-11-15 16:34:45.910 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+2024-11-15 16:34:45.914 +03:00 [INF] Executing RedirectResult, redirecting to /Home/Privacy.
+2024-11-15 16:34:45.916 +03:00 [INF] Executed action WebUI.Controllers.HomeController.AddToFavorite (WebUI) in 2998.2328ms
+2024-11-15 16:34:45.917 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.AddToFavorite (WebUI)'
+2024-11-15 16:34:45.919 +03:00 [INF] HTTP GET /Home/AddToFavorite responded 302 in 3006.4422 ms
+2024-11-15 16:34:45.921 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/AddToFavorite?cityName=istanbul - - - 302 0 - 3012.4465ms
+2024-11-15 16:34:45.924 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Home/Privacy - -
+2024-11-15 16:34:45.926 +03:00 [INF] Executing endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:34:45.928 +03:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PrivacyAsync() on controller WebUI.Controllers.HomeController (WebUI).
+2024-11-15 16:34:45.931 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'WeatherAppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+2024-11-15 16:34:45.935 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:34:45.940 +03:00 [INF] Executing ViewResult, running view Privacy.
+2024-11-15 16:34:45.943 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[CityName], [f].[UserId]
+FROM [Favorites] AS [f]
+WHERE [f].[UserId] = @__userId_0
+2024-11-15 16:34:45.953 +03:00 [INF] Executed ViewResult - view Privacy executed in 12.5731ms.
+2024-11-15 16:34:45.956 +03:00 [INF] Executed action WebUI.Controllers.HomeController.PrivacyAsync (WebUI) in 24.9277ms
+2024-11-15 16:34:45.959 +03:00 [INF] Executed endpoint 'WebUI.Controllers.HomeController.PrivacyAsync (WebUI)'
+2024-11-15 16:34:45.961 +03:00 [INF] HTTP GET /Home/Privacy responded 200 in 34.8798 ms
+2024-11-15 16:34:45.966 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Home/Privacy - - - 200 - text/html;+charset=utf-8 41.3222ms
+2024-11-15 16:34:45.974 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2024-11-15 16:34:45.974 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2024-11-15 16:34:45.978 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12342 application/javascript;+charset=utf-8 3.6838ms
+2024-11-15 16:34:45.979 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 5.6351ms

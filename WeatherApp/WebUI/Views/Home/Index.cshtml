@@ -1,0 +1,24 @@
+﻿@using Models.Model;
+@model UserListViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <table class="table table responsive">
+        <tr>
+            <td>Adı</td>
+            <td>Soyadı</td>
+            <td>Giriş Yap</td>
+        </tr>
+        @foreach(var user in Model.Users)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Surname</td>
+                <td><a class="btn btn-primary" asp-controller="Home" asp-action="Login" asp-route-userId="@user.Id"> Giriş Yap</a></td>
+            </tr>
+        }
+    </table>
+</div>
